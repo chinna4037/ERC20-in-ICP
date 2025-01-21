@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "ERC20_backend": {
+      "main": "src/ERC20_backend/main.mo",
+      "type": "motoko"
+    },
+    "ERC20_frontend": {
+      "dependencies": [
+        "ERC20_backend"
+      ],
+      "source": [
+        "src/ERC20_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ERC20_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
